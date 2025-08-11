@@ -2,7 +2,7 @@
   "name": "rest-countries-api",
   "version": "1.0.0",
   "scripts": {
-   "start": "parcel index.html"
+   "build": "parcel index.html"
   },
   "author": "",
   "license": "ISC",
