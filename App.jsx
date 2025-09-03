@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import Header from './components/Header'
 import SearchBar from './components/SearchBar'
 import SelectMenu from './components/SelectMenu'
@@ -13,10 +13,10 @@ const App = () => {
       <Header />
       <main>
         <div className="search-filter-container">
-          <SearchBar setQuery={setQuery}/>
+          <SearchBar setQuery={setQuery} />
           <SelectMenu />
         </div>
-        <CountriesList query={query}/>
+        {query === 'unmount' ? '' : <CountriesList query={query} />}
       </main>
     </>
   )
